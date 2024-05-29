@@ -15,7 +15,7 @@ var pingCounter = prometheus.NewCounter(
 
 func ping(w http.ResponseWriter, r *http.Request) {
 	pingCounter.Inc()
-	fmt.Fprintf(w, "pong")
+	fmt.Fprintf(w, "sabbir")
 }
 
 func RunServer(Port string) {

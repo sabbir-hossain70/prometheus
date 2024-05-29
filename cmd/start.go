@@ -23,4 +23,5 @@ func init() {
 	fmt.Println("Inside start.go")
 	startCmd.Flags().StringVarP(&Port, "port", "p", "8081", "Port to listen on")
 	rootCmd.AddCommand(startCmd)
+	println("Port: ", Port)
 }

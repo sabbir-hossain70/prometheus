@@ -1,4 +1,4 @@
-package prometheus
+package main
 
 import "github.com/sabbir-hossain70/prometheus/cmd"
 
