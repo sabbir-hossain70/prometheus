@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: prometheus-demo-exporter
+  labels:
+    app: prom-app-service-monitor
+spec:
+  selector:
+    app: prom-app
+  ports:
+    - port: 3200
+      targetPort: 8081
+      name: sabbirport
+      protocol: TCP
